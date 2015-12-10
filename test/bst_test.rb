@@ -123,15 +123,17 @@ class BinarySearchTreeTest < Minitest::Test
   #sort returns array of node elements in ascending order
   def test_return_array_root_node
     @tree.insert("f")
-    assert_equal "f", @tree.inOrderTraversal
+    assert_equal ["f"], @tree.sort
   end
   #sort returns array of two nodes, 1 left and root
   def test_return_sorted_array_two_nodes
     @tree.insert("b")
     @tree.insert("a")
-    assert_equal "ab", @tree.inOrderTraversal
+    assert_equal ["ab"], @tree.sort
   end
   #load('document name'), loads document, inserts tree, returns number of
   #unique values inserted to tree
+  def test_load_loads_document
+  end
 
 end

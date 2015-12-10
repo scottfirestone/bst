@@ -1,4 +1,5 @@
 require_relative 'node'
+# require_relative 'file_reader'
 require 'pry'
 
 class BinarySearchTree
@@ -104,9 +105,27 @@ class BinarySearchTree
     end
   end
 
-  def sort
-    
-  end
+  # def sort(current=@root, sorted_array = [])
+  #   if (current.left != nil) && (current.right!=nil)
+  #     sorted_array < current.value
+  #     if current.left != nil
+  #       current = current.left
+  #       sort(current, sorted_array)
+  #     end
+  #     sorted_array < current.value
+  #     if current.right != nil
+  #       current = current.right
+  #       sort(current, sorted_array)
+  #     end
+  #   else
+  #     sorted_array << current.value
+  #   end
+  #   sorted_array
+  # end
+  #
+  # def load
+  #
+  # end
 end
 
-binding.pry
+# binding.pry

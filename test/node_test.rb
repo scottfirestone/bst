@@ -3,9 +3,6 @@ require 'node'
 
 class NodeTest < Minitest::Test
 
-  def setup
-
-  end
   #creating a node with nil value
   def test_create_new_node_nil_value
     node = Node.new(nil)
